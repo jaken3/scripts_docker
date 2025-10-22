@@ -55,12 +55,15 @@ DB_HOST=localhost
 ## 🧰 Modo de uso
 ### `Ejecutar en entorno local`
 Para construir y ejecutar la imagen en tu máquina sin subirla a AWS:
+```bash
 .\launch-docker.ps1 -pushImage 0 -projectEnv "./devProject.env" -dockerLocalEnv "./local.env"
+```
 
 ### `Subir imagen a AWS ECR`
 Para construir la imagen y publicarla en tu repositorio ECR:
+```bash
 .\launch-docker.ps1 -pushImage 1 -projectEnv "./exampleProject.env"
-
+```
 ##🧾 Licencia
 Este script es de uso libre con fines educativos y profesionales.
 Autoría: Luis Felipe Fernández
