@@ -64,7 +64,7 @@ Para construir la imagen y publicarla en tu repositorio ECR:
 ```bash
 .\launch-docker.ps1 -pushImage 1 -projectEnv "./exampleProject.env"
 ```
-##🧾 Licencia
+## 🧾 Licencia
 Este script es de uso libre con fines educativos y profesionales.
 Autoría: Luis Felipe Fernández
 
