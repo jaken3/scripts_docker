@@ -52,6 +52,28 @@ SPRING_PROFILES_ACTIVE=local
 DB_HOST=localhost
 ```
 
+## ⚙ Requisitos de estructura del proyecto ##
+Para que el script funcione correctamente, asegúrate de que:
+
+ ✅ El archivo `Dockerfile` esté configurado para realizar el build de la imagen.
+ 
+ ✅ La carpeta `deploys` debe estar dentro del repositorio raíz, al mismo nivel que la carpeta `src`
+
+### 📂 Estructura esperada ###
+```bash
+root/
+├── deploys/
+│   ├── launch-docker.ps1
+│   ├── devProject.env
+│   ├── local.env
+│   
+└── src/
+│   └── [tu código fuente]
+│ 
+└── Dockerfile
+
+```
+
 ## 🧰 Modo de uso
 ### `Ejecutar en entorno local`
 Para construir y ejecutar la imagen en tu máquina sin subirla a AWS:
